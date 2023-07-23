@@ -1,0 +1,27 @@
+###
+POST  http://localhost:2000/user
+Content-Type: application/json
+
+{
+    "name" : "Irwanda",
+    "email" : "irwanda@gmail.com",
+    "password" : "1234",
+    "confpassword" :"1234",
+    "role" : "user",
+    "status" : "leader"
+}
+
+//findUsersAllparams
+###
+POST   http://localhost:2000/login
+Content-Type: application/json
+
+{
+    "email" : "irwanda@gmail.com",
+    "password" : "12345"
+}
+
+###
+GET  http://localhost:2000/token
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4NmViNmMzNC1kMWFlLTQ4ZTUtOTQzZi1kOTVhNDY3ZmE5ZTUiLCJuYW1lIjoiSXJ3YW5kYSIsImVtYWlsIjoiSXJ3YW5kYUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJzdGF0dXMiOiJwZWdhd2FpIiwiaWF0IjoxNjkwMTAwMzQ5LCJleHAiOjE2OTAxMDAzNjl9.GAaHKUulx3cz9lpBcVv54dXvgYbIpYfq_go8dZ8IYN8
